@@ -5663,7 +5663,7 @@
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-	const videoSrc = "images/intro.mp4"; // Directly set the video source
+	const videoSrc = window.innerWidth < 768 ? "images/intromob.mp4" : "images/introlap.mp4";
 	//const audioSrc = "images/audio.mp3"; // Directly set the audio source
 	const video = document.createElement("video"); // Create a video element
 	video.id = "introVideo";
